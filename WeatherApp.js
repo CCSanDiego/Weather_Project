@@ -16,7 +16,7 @@ $('#selectedCityBut').keydown(function (event) {
 });
 
 function fivedayForecast(city) {
-    $.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&mode=json&units=imperial&APPID=918cfc46242bc81cb15e16cd0fb9a5f0", function (json) {
+    $.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&mode=json&units=imperial&APPID=cc4afd66993f4c833ae090b12cef6367", function (json) {
         var forecast = [];
 
         for (var i = 0; i < json['list'].length; i++) {
